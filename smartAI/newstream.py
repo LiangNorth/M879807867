@@ -139,8 +139,8 @@ elif nav_choice == '情感对话机器人':
             self.user = user
             self.messages = [{"role": "system", "content": ""}]
             self.filename = "./user_messages.json"
-            openai.api_key = "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"
-           # openai.api_base = "http://openai-proxy.openai-proxy.1602580520501222.us-west-1.fc.devsapp.net/v1"
+            openai.api_key = "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"
+            openai.api_base = "http://openai-proxy.openai-proxy.1602580520501222.us-west-1.fc.devsapp.net/v1"
 
         def ask_gpt(self):
             recent_messages = "\n".join([f'{msg["role"]}：{msg["content"]}' for msg in self.messages[-10:]])
