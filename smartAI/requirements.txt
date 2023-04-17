@@ -10,3 +10,4 @@ streamlit==1.21.0
 paddlepaddle
 opencv-python-headless
 opencv-python
+cv2
