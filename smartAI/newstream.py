@@ -173,7 +173,7 @@ elif nav_choice == '情感对话机器人':
         # 创建页面标题
         st.title('情感对话机器人Moss')
 
-        image = Image.open("/smartAI/static/axel-johansson-axjo.gif")
+        image = Image.open("smartAI/static/axel-johansson-axjo.gif")
         st.image(image, caption='我是机器人Moss(>_<)', use_column_width=True)
 
         # 输入用户名称
