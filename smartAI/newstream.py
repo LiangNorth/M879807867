@@ -5,7 +5,11 @@ import openai
 import json
 import os
 from PIL import Image
-import paddlehub as hub
+try:
+    import paddlehub as hub
+except ImportError as e:
+    print(f"Error importing paddlehub: {e}")
+    hub = None
 import chardet
 import pandas as pd
 
