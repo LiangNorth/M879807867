@@ -35,7 +35,7 @@ if nav_choice == '主页面':
     st.write("此产品只是一个雏形，还有很多东西等待后续添加")
     st.write("如果你觉得其它页面太大了,你可以在右上角的三个杠里面打开settings,把Wide mode关闭")
 
-    image = Image.open("../smartAI/static/axel-johansson-axjo.gif")
+    image = Image.open("/smartAI/static/axel-johansson-axjo.gif")
     st.image(image, caption='对你致以最真诚的问候', use_column_width=True)
 
 
@@ -129,7 +129,7 @@ elif nav_choice == '产品评论分析':
 
     st.write("介绍:这个模型可以识别用户上传的txt文本，并将里面的用户对于产品的评价进行积极、中性、消极的评价，并用饼状图表示出来")
     # 显示图片
-    image = Image.open("../smartAI/static/woman-7863041.jpg")
+    image = Image.open("/smartAI/static/woman-7863041.jpg")
     st.image(image, caption='来吧,让我们来分析分析你的文档', use_column_width=True)
 
 elif nav_choice == '情感对话机器人':
@@ -173,7 +173,7 @@ elif nav_choice == '情感对话机器人':
         # 创建页面标题
         st.title('情感对话机器人Moss')
 
-        image = Image.open("../smartAI/static/axel-johansson-axjo.gif")
+        image = Image.open("/smartAI/static/axel-johansson-axjo.gif")
         st.image(image, caption='我是机器人Moss(>_<)', use_column_width=True)
 
         # 输入用户名称
@@ -274,7 +274,7 @@ elif nav_choice == '情感分析文本':
         ax2.plot(np.arange(len(output_text.split('\n'))), [len(x) for x in output_text.split('\n')])
         ax2.set_title('Length of Each Sentence')
         st.pyplot(fig2)
-    image = Image.open("../smartAI/static/taiyang.jpg")
+    image = Image.open("/smartAI/static/taiyang.jpg")
     st.image(image, caption='233333', use_column_width=True)
 
 elif nav_choice == '社交媒体评论分析':
