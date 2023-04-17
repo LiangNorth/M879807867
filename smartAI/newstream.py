@@ -139,7 +139,7 @@ elif nav_choice == '情感对话机器人':
             self.user = user
             self.messages = [{"role": "system", "content": ""}]
             self.filename = "./user_messages.json"
-            openai.api_key = "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"
+            openai.api_key = api_key
             openai.api_base = "http://openai-proxy.openai-proxy.1602580520501222.us-west-1.fc.devsapp.net/v1"
 
         def ask_gpt(self):
@@ -175,7 +175,10 @@ elif nav_choice == '情感对话机器人':
 
         image = Image.open("smartAI/static/axel-johansson-axjo.gif")
         st.image(image, caption='我是机器人Moss(>_<)', use_column_width=True)
-
+        
+        
+        api_key = st.text_input("请输入api密钥")
+        
         # 输入用户名称
         user = st.text_input("请输入用户名称：")
 
