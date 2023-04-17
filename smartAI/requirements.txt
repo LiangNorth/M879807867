@@ -2,7 +2,7 @@ chardet==5.1.0
 matplotlib==3.7.1
 numpy==1.24.2
 openai==0.27.4
-paddlehub==2.3.1
+paddlehub
 pandas==1.5.3
 Pillow==9.5.0
 Pillow==9.5.0
