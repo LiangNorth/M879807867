@@ -139,7 +139,7 @@ elif nav_choice == '情感对话机器人':
             self.user = user
             self.messages = [{"role": "system", "content": ""}]
             self.filename = "./user_messages.json"
-            openai.api_key = "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"
+            openai.api_key = "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"
            # openai.api_base = "http://openai-proxy.openai-proxy.1602580520501222.us-west-1.fc.devsapp.net/v1"
 
         def ask_gpt(self):
