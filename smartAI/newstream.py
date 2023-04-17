@@ -27,7 +27,7 @@ if nav_choice == '主页面':
     st.title('你好，欢迎使用我们的产品！')
 
     # 加载图片
-    image = Image.open("../smartAI/static/woman-7863041.jpg")
+    image = Image.open("smartAI/static/woman-7863041.jpg")
     st.image(image, caption='人工智能引领新时代！', use_column_width=True)
 
     # 显示文字
