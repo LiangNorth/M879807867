@@ -8,6 +8,7 @@ from PIL import Image
 import paddlehub as hub
 import chardet
 import pandas as pd
+import cv2
 
 # 设置页面布局为最大化
 st.set_page_config(page_title='情感智能决策引擎系统', layout="wide")
